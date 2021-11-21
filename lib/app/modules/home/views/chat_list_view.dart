@@ -15,7 +15,13 @@ class ChatListView extends GetView {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text("Kontak"),
+              const Text(
+                "Kontak",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
               Text(tanggal),
             ],
           ).paddingOnly(bottom: 5),
