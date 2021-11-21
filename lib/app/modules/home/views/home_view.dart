@@ -2,6 +2,7 @@ import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:satsiber/app/modules/home/views/chat_list_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -26,8 +27,8 @@ class HomeView extends GetView<HomeController> {
           ),
           indicatorColor: Colors.white,
         ),
-        views: const [
-          Center(child: Text("Chats View")),
+        views: [
+          ChatListView(),
           Center(child: Text("Groups View")),
           Center(child: Text("Profile View"))
         ],
