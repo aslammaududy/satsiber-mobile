@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:satsiber/app/modules/home/views/chat_list_view.dart';
+import 'package:satsiber/app/modules/home/views/group_list_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -29,7 +30,7 @@ class HomeView extends GetView<HomeController> {
         ),
         views: [
           ChatListView(),
-          Center(child: Text("Groups View")),
+          GroupListView(),
           Center(child: Text("Profile View"))
         ],
       ),
